@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -51,10 +52,10 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Heebo", sans-serif;
-  font-size: 1rem;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #100e0e;
   text-align: left;
   background-color: #ffffff; }
@@ -71,6 +72,8 @@ hr {
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700 !important;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -113,7 +116,8 @@ dd {
   margin-left: 0; }
 
 blockquote {
-  margin: 0 0 1rem; }
+  margin: 0 0 1rem;
+  border-radius: 8px; }
 
 b,
 strong {
@@ -384,6 +388,12 @@ mark,
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem; }
+
+blockquote.listing { 
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.2;
+  word-wrap: break-word;
+  font-weight: 500; }
 
 .blockquote-footer {
   display: block;
@@ -7398,7 +7408,7 @@ a.text-dark:hover, a.text-dark:focus {
       margin-bottom: 26px;
       max-width: 288px; }
     .oleez-footer .footer-content .footer-social-links a {
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 700;
       line-height: 1;
       color: inherit;
@@ -7412,7 +7422,7 @@ a.text-dark:hover, a.text-dark:focus {
         margin-bottom: 6px;
         color: #f7b500; }
       .oleez-footer .footer-content .footer-widget-text .widget-content {
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 1.29; }
   .oleez-footer .footer-text {
     display: flex;
@@ -7424,7 +7434,7 @@ a.text-dark:hover, a.text-dark:focus {
       .oleez-footer .footer-text {
         display: block; } }
     .oleez-footer .footer-text p {
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 1.29; }
 
 .oleez-landing-carousel .carousel-item {
@@ -7475,7 +7485,7 @@ a.text-dark:hover, a.text-dark:focus {
     .oleez-landing-carousel .carousel-item .carousel-caption .carousel-item-link {
       display: inline-block;
       color: #100e0e;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.88px;
       margin-top: 26px;
@@ -7486,7 +7496,7 @@ a.text-dark:hover, a.text-dark:focus {
         display: inline-block;
         margin-left: 11px;
         color: #000000;
-        font-size: 14px;
+        font-size: 1rem;
         transition: all 0.3s ease-in; }
       .oleez-landing-carousel .carousel-item .carousel-caption .carousel-item-link:hover {
         color: #100e0e;
@@ -7561,7 +7571,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 13px; }
 
 .oleez-landing-section-about .landing-about-feature .about-feature-description {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.71;
   font-weight: 300;
   margin-bottom: 0; }
@@ -7606,7 +7616,7 @@ a.text-dark:hover, a.text-dark:focus {
       .oleez-landing-section-projects .landing-project-card .card-img-overlay {
         width: 160px; } }
     .oleez-landing-section-projects .landing-project-card .card-img-overlay .project-category {
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 500;
       line-height: 1.43;
       color: #ffffff; }
@@ -7650,12 +7660,12 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 10px; }
 
 .oleez-landing-section-team .landing-team-card .team-card-job {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1;
   margin-bottom: 16px; }
 
 .oleez-landing-section-team .landing-team-card .team-card-social-links a {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1;
   margin-right: 10px;
@@ -7970,7 +7980,7 @@ a.text-dark:hover, a.text-dark:focus {
       line-height: 1;
       margin-bottom: 7px; }
     .portfolio-grid-page .portfolio-card .project-category {
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 1;
       margin-bottom: 0; }
 
@@ -8119,7 +8129,7 @@ a.text-dark:hover, a.text-dark:focus {
       -o-object-fit: cover;
          object-fit: cover; }
   .blog-grid-page .blog-post-card .blog-post-date {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1;
     margin-bottom: 6px; }
   .blog-grid-page .blog-post-card .blog-post-title {
@@ -8139,14 +8149,14 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 14px; }
 
 .blog-post-single .blog-post-wrapper .post-header .post-date {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 2.86; }
 
 .blog-post-single .blog-post-wrapper .post-content h4 {
   margin-bottom: 16px; }
 
 .blog-post-single .blog-post-wrapper .post-content p {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.71;
   margin-bottom: 16px; }
@@ -8165,9 +8175,14 @@ a.text-dark:hover, a.text-dark:focus {
     left: 30px;
     top: 15px;
     line-height: 1; }
+
+    .blog-post-single .blog-post-wrapper .post-content blockquote.output::before {
+      content: ""; }
+
   .blog-post-single .blog-post-wrapper .post-content blockquote p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     line-height: 1.63; }
     .blog-post-single .blog-post-wrapper .post-content blockquote p:last-child {
       margin-bottom: 0; }
@@ -8211,7 +8226,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%; }
 
 .blog-post-single .blog-post-wrapper .oleez-comment-form label {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 10px; }
 
@@ -8223,7 +8238,7 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
   border-bottom: 2px solid #000000;
   padding: 9px 0;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 700; }
   .blog-post-single .blog-post-wrapper .oleez-comment-form .oleez-input:focus {
     outline: none; }
@@ -8278,7 +8293,7 @@ a.text-dark:hover, a.text-dark:focus {
   .sidebar-widget .widget-content {
     padding-bottom: 24px; }
   .sidebar-widget .social-links a {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1;
     color: inherit;
@@ -8328,7 +8343,7 @@ a.text-dark:hover, a.text-dark:focus {
        object-fit: cover;
     margin-bottom: 14px; }
   .blog-standard .blog-post .post-date {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 2.86;
     margin-bottom: 4px; }
   .blog-standard .blog-post .post-title {
@@ -8337,12 +8352,12 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 1.4;
     margin-bottom: 9px; }
   .blog-standard .blog-post .post-excerpt {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.71;
     margin-bottom: 15px; }
   .blog-standard .blog-post .post-permalink {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 0.88px;
     color: inherit; }

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>DSK's Blog | Rakha</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/animate.css/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/fancybox/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+  </head>
+
+  <body>
+    <div class="oleez-loader"></div>
+    <header class="oleez-header" style="padding-bottom: 5rem">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="assets/images/Logo.svg" alt="rakhacimano logo"
+        /></a>
+        <div class="collapse navbar-collapse" id="oleezMainNav">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Blog<span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item active">
+              <a
+                class="nav-link nav-link-btn"
+                href="#!"
+                data-toggle="searchModal"
+              >
+                <img src="assets/images/search.svg" alt="search" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="blog-post-single">
+      <div class="container">
+        <h1 class="post-title wow fadeInUp">Hosting</h1>
+        <div class="row">
+          <div class="col-md-8 blog-post-wrapper">
+            <div class="post-header wow fadeInUp">
+              <img
+                src="assets/images/Standard_list_blog/Standard_1@2x.jpg"
+                alt="blog post"
+                class="post-featured-image"
+              />
+              <p class="post-date">November 16, 2022</p>
+            </div>
+            <div class="post-content wow fadeInUp">
+              <h4>Interpreter | Segitiga Bintang Javascript</h4>
+              <p>
+                Javascript menganut konsep Interpreter. Apasih maksutnya? Jadi
+                interpreter itu memungkinkan mesin untuk membaca kode dari atas
+                ke bawah. Proses bacanya relatif lebih cepat, karena tidak
+                menggunakan compiler.
+              </p>
+              <p>
+                Di sini kita akan mencoba untuk ngebuat segitiga bintang dan
+                bentuk lainnya menggunakan javascript. Yuk intip proses
+                pembuatannya!
+              </p>
+
+              <h5 class="mt-4">Persegi & Segi Empat</h5>
+              <blockquote class="listing">
+                <font color="#00bbdd">&lt;!DOCTYPE&nbsp;html&gt;</font><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">html</font>&nbsp;<font
+                    color="#000066"
+                    >lang</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;en&quot;</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">head</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >charset</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;UTF-8&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >http-equiv</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;X-UA-Compatible&quot;</font
+                  >&nbsp;<font color="#000066">content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;IE=edge&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >name</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;viewport&quot;</font>&nbsp;<font
+                    color="#000066"
+                    >content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000"
+                    >&quot;width=device-width,&nbsp;initial-scale=1.0&quot;</font
+                  >&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">title</font>&gt;</font
+                >Persegi<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">title</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">head</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">body</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">h2</font>&gt;</font
+                >Persegi<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">h2</font>&gt;&lt;<font color="#000000"
+                    >br</font
+                  >&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">p</font>&nbsp;<font color="#000066"
+                    >id</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;Rectangle&quot;</font
+                  >&gt;&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">p</font>&gt;</font
+                >&nbsp;<br />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">script</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;string&nbsp;=&nbsp;'';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(let&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;<font
+                  color="#009900"
+                  >&lt;<font color="#66cc66">=</font>&nbsp;<font color="#cc66cc"
+                    >5</font
+                  >;&nbsp;i++<font color="#66cc66">&#41;</font>&nbsp;<font
+                    color="#66cc66"
+                    >&#123;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'*'</font>;</font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    color="#000066"
+                    >for</font
+                  >&nbsp;<font color="#66cc66">&#40;</font>let&nbsp;j&nbsp;<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#cc66cc">0</font
+                  >;&nbsp;j&nbsp;&lt;&nbsp;<font color="#cc66cc">5</font
+                  >;&nbsp;j++<font color="#66cc66">&#41;</font>&nbsp;<font
+                    color="#66cc66"
+                    >&#123;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'&nbsp;*&nbsp;'</font>;</font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    color="#66cc66"
+                    >&#125;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'&lt;br&gt;</font></font
+                >';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('Rectangle').innerHTML&nbsp;=&nbsp;string;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">script</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">body</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">html</font>&gt;</font
+                >
+              </blockquote>
+              <blockquote style="font-weight: 700" class="output">
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*<br />
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*<br />
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*<br />
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*<br />
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*<br />
+                *&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*
+              </blockquote>
+
+              <h5 class="mt-4">Segitiga Siku - Siku</h5>
+              <blockquote class="listing">
+                <font color="#00bbdd">&lt;!DOCTYPE&nbsp;html&gt;</font><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">html</font>&nbsp;<font
+                    color="#000066"
+                    >lang</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;en&quot;</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">head</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >charset</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;UTF-8&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >http-equiv</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;X-UA-Compatible&quot;</font
+                  >&nbsp;<font color="#000066">content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;IE=edge&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >name</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;viewport&quot;</font>&nbsp;<font
+                    color="#000066"
+                    >content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000"
+                    >&quot;width=device-width,&nbsp;initial-scale=1.0&quot;</font
+                  >&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">title</font>&gt;</font
+                >Segitiga&nbsp;Biasa<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">title</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">head</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">body</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">h2</font>&gt;</font
+                >Segitiga&nbsp;Biasa<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">h2</font>&gt;</font
+                >&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">br</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">p</font>&nbsp;<font color="#000066"
+                    >id</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;triangle&quot;</font
+                  >&gt;&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">p</font>&gt;</font
+                ><br />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">script</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;string&nbsp;=&nbsp;'';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(let&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;<font
+                  color="#009900"
+                  >&lt;<font color="#66cc66">=</font>&nbsp;<font color="#cc66cc"
+                    >4</font
+                  >;&nbsp;i++<font color="#66cc66">&#41;</font>&nbsp;<font
+                    color="#66cc66"
+                    >&#123;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'*'</font>;</font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    color="#000066"
+                    >for</font
+                  >&nbsp;<font color="#66cc66">&#40;</font>let&nbsp;j&nbsp;<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#cc66cc">0</font
+                  >;&nbsp;j&nbsp;&lt;&nbsp;i;&nbsp;j++<font color="#66cc66"
+                    >&#41;</font
+                  >&nbsp;<font color="#66cc66">&#123;</font></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'*'</font>;</font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    color="#66cc66"
+                    >&#125;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'&lt;br&gt;</font></font
+                >';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('triangle').innerHTML&nbsp;=&nbsp;string;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">script</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">body</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">html</font>&gt;</font
+                >
+              </blockquote>
+              <blockquote class="output">
+                *<br />
+                **<br />
+                ***<br />
+                ****<br />
+                *****
+              </blockquote>
+
+              <h5 class="mt-4">Invers Segitiga Siku - Siku</h5>
+              <blockquote class="listing">
+                <font color="#00bbdd">&lt;!DOCTYPE&nbsp;html&gt;</font><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">html</font>&nbsp;<font
+                    color="#000066"
+                    >lang</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;en&quot;</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">head</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >charset</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;UTF-8&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >http-equiv</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;X-UA-Compatible&quot;</font
+                  >&nbsp;<font color="#000066">content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;IE=edge&quot;</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">meta</font>&nbsp;<font
+                    color="#000066"
+                    >name</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;viewport&quot;</font>&nbsp;<font
+                    color="#000066"
+                    >content</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000"
+                    >&quot;width=device-width,&nbsp;initial-scale=1.0&quot;</font
+                  >&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">title</font>&gt;</font
+                >Segitiga&nbsp;Terbalik<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">title</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">head</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#000000">body</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">h2</font>&gt;</font
+                >Segitiga&nbsp;terbalik<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">h2</font>&gt;&lt;<font color="#000000"
+                    >br</font
+                  >&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">p</font>&nbsp;<font color="#000066"
+                    >id</font
+                  ><font color="#66cc66">=</font
+                  ><font color="#ff0000">&quot;triangle&quot;</font
+                  >&gt;&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">p</font>&gt;</font
+                ><br />
+                &nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#000000">script</font>&gt;</font
+                ><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;string&nbsp;=&nbsp;'';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(let&nbsp;x&nbsp;=&nbsp;1;&nbsp;x&nbsp;<font
+                  color="#009900"
+                  >&lt;<font color="#66cc66">=</font>&nbsp;<font color="#cc66cc"
+                    >5</font
+                  >;&nbsp;x++<font color="#66cc66">&#41;</font>&nbsp;<font
+                    color="#66cc66"
+                    >&#123;</font
+                  ></font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#ff0000">'*'</font>;</font
+                ><br />
+                <font color="#009900"
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font
+                    color="#000066"
+                    >for</font
+                  >&nbsp;<font color="#66cc66">&#40;</font>let&nbsp;y&nbsp;<font
+                    color="#66cc66"
+                    >=</font
+                  >&nbsp;<font color="#cc66cc">5</font>;&nbsp;y&nbsp;&gt;</font
+                >&nbsp;x;&nbsp;y--)&nbsp;{<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+=&nbsp;'*';<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;+=&nbsp;'<font
+                  color="#009900"
+                  >&lt;<font color="#000000">br</font>&gt;</font
+                >'<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('triangle').innerHTML&nbsp;=&nbsp;string;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">script</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">body</font>&gt;</font
+                ><br />
+                <font color="#009900"
+                  >&lt;<font color="#66cc66">/</font
+                  ><font color="#000000">html</font>&gt;</font
+                >
+              </blockquote>
+              <blockquote class="output">
+                *****<br />
+                ****<br />
+                ***<br />
+                **<br />
+                *
+              </blockquote>
+            </div>
+            <div class="post-tags wow fadeInUp">
+              <a href="#!" class="post-tag">HTML</a>
+              <a href="#!" class="post-tag">CSS</a>
+              <a href="#!" class="post-tag">Javascript</a>
+              <a href="#!" class="post-tag">Blog</a>
+            </div>
+            <div class="post-navigation wow fadeInUp">
+              <a href="index.html">
+                <button class="btn prev-post">Prev Post</button>
+              </a>
+              <button class="btn next-post">Next Post</button>
+            </div>
+            <div class="comment-section wow fadeInUp">
+              <h5 class="section-title">Leave a Reply</h5>
+              <form action="POST" class="oleez-comment-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="oleez-input"
+                      id="fullName"
+                      name="fullName"
+                      required
+                    />
+                    <label for="fullName">*Full name</label>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="oleez-input"
+                      id="fullName"
+                      name="email"
+                      required
+                    />
+                    <label for="email">*Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label for="message">*Message</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="10"
+                      class="oleez-textarea"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-submit">Send</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="sidebar-widget wow fadeInUp">
+              <h5 class="widget-title">Tag</h5>
+              <div class="widget-content">
+                <a href="#!" class="post-tag">HTML</a>
+                <a href="#!" class="post-tag">CSS</a>
+                <a href="#!" class="post-tag">Javascript</a>
+                <a href="#!" class="post-tag">Computer System</a>
+                <a href="#!" class="post-tag">Blog</a>
+              </div>
+            </div>
+            <div class="sidebar-widget wow fadeInUp">
+              <h5 class="widget-title">Bagikan</h5>
+              <div class="widget-content">
+                <nav class="social-links">
+                  <a href="#!">Tw</a>
+                  <a href="#!">In</a>
+                  <a href="#!">Fb</a>
+                  <a href="#!">Be</a>
+                </nav>
+              </div>
+            </div>
+            <div class="sidebar-widget wow fadeInUp">
+              <h5 class="widget-title">Galeri</h5>
+              <div class="widget-content">
+                <div class="gallery">
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_01.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_01.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_02.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_02.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_03.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_03.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_04.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_04.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_05.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_05.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_06.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_06.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_07.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_07.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_08.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_08.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_09.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_09.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_10.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_10.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_11.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_11.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                  <a
+                    href="assets/images/Blogstandard/Blogstandard_@2x_12.jpg"
+                    class="gallery-grid-item"
+                    data-fancybox="widget-gallery"
+                  >
+                    <img
+                      src="assets/images/Blogstandard/Blogstandard_@2x_12.jpg"
+                      alt="gallery item"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-widget wow fadeInUp">
+              <h5 class="widget-title">Kategori</h5>
+              <div class="widget-content">
+                <ul class="category-list">
+                  <li><a href="#!">Javascript</a></li>
+                  <li><a href="#!">HTML</a></li>
+                  <li><a href="#!">CSS</a></li>
+                  <li><a href="#!">Computer System</a></li>
+                  <li><a href="#!">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="oleez-footer wow fadeInUp">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="assets/images/logo-footer.svg"
+                alt="oleez"
+                class="footer-logo"
+              />
+              <p class="footer-intro-text">
+                Yuk saling terkoneksi dengan klik icon di bawah ini!
+              </p>
+              <nav class="footer-social-links">
+                <a href="#!">Tw</a>
+                <a href="#!">In</a>
+                <a href="#!">Fb</a>
+                <a href="#!">Be</a>
+              </nav>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6 footer-widget-text">
+                  <h6 class="widget-title">ENQUIRES</h6>
+                  <p class="widget-content">rakhacimano@gmail.com</p>
+                </div>
+                <div class="col-md-6 footer-widget-text">
+                  <h6 class="widget-title">ADDRESS</h6>
+                  <p class="widget-content">
+                    Malang <br />
+                    based on Surabaya
+                  </p>
+                </div>
+                <div class="col-md-6 footer-widget-text">
+                  <h6 class="widget-title">WORK HOURS</h6>
+                  <p class="widget-content">
+                    Weekdays: 08:00 - 17:00 <br />
+                    Weekdays: 19:00 - 22:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p class="mb-md-0">
+            ©2022, Rakha. Made with passion by
+            <a
+              href="https://www.linkedin.com/in/rakhaputra/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-reset"
+              >RakhaCimano</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Off canvas social menu -->
+    <nav id="offCanvasMenu" class="off-canvas-menu">
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        data-dismiss="offCanvasMenu"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <ul class="oleez-social-menu">
+        <li>
+          <a href="#!" class="oleez-social-menu-link">Facebook</a>
+        </li>
+        <li>
+          <a href="#!" class="oleez-social-menu-link">Instagram</a>
+        </li>
+        <li>
+          <a href="#!" class="oleez-social-menu-link">Behance</a>
+        </li>
+        <li>
+          <a href="#!" class="oleez-social-menu-link">Dribbble</a>
+        </li>
+        <li>
+          <a href="#!" class="oleez-social-menu-link">Email</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Full screen search box -->
+    <div id="searchModal" class="search-modal">
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        data-dismiss="searchModal"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <form action="index.html" method="get" class="oleez-overlay-search-form">
+        <label for="search" class="sr-only">Search</label>
+        <input
+          type="search"
+          class="oleez-overlay-search-input"
+          id="search"
+          name="search"
+          placeholder="Search here"
+        />
+      </form>
+    </div>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/wowjs/wow.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
